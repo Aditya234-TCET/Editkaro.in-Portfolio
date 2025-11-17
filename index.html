@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scrollProgress"></div>
+
+    <!-- FLOATING NAVBAR -->
+    <nav id="navbar">
+        <h2>Editkaro.in</h2>
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div></div><div></div><div></div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="fade-in">Editkaro.in Portfolio</h1>
+        <p class="fade-in">Social Media Marketing & Video Editing Agency</p>
+    </header>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-buttons fade-in">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="short">Short Videos</button>
+        <button class="filter-btn" data-category="long">Long Videos</button>
+        <button class="filter-btn" data-category="gaming">Gaming</button>
+        <button class="filter-btn" data-category="football">Football</button>
+        <button class="filter-btn" data-category="edits">Edits</button>
+        <button class="filter-btn" data-category="ecom">eCommerce Ads</button>
+        <button class="filter-btn" data-category="documentary">Documentary</button>
+        <button class="filter-btn" data-category="color">Color Grading</button>
+        <button class="filter-btn" data-category="anime">Anime</button>
+        <button class="filter-btn" data-category="ads">Ads</button>
+    </div>
+
+    <!-- VIDEO GALLERY -->
+    <section class="video-gallery" id="portfolio">
+        <!-- Short Videos -->
+        <div class="video-card short fade-in">
+            <video controls>
+                <source src="short.mp4" type="video/mp4">
+            </video>
+            <p>Short Video Edit 1</p>
+        </div>
+        <div class="video-card short fade-in">
+            <video controls>
+                <source src="short-s.mp4" type="video/mp4">
+            </video>
+            <p>Short Video Edit 2</p>
+        </div>
+
+        <!-- Long Videos -->
+        <div class="video-card long fade-in">
+            <video controls>
+                <source src="long.mp4" type="video/mp4">
+            </video>
+            <p>Long Video Edit</p>
+        </div>
+
+        <!-- Gaming -->
+        <div class="video-card gaming fade-in">
+            <video controls>
+                <source src="gaming.mp4" type="video/mp4">
+            </video>
+            <p>Gaming Edit</p>
+        </div>
+
+        <!-- Football -->
+        <div class="video-card football fade-in">
+            <video controls>
+                <source src="football.mp4" type="video/mp4">
+            </video>
+            <p>Football Edit</p>
+        </div>
+
+        <!-- Edits -->
+        <div class="video-card edits fade-in">
+            <video controls>
+                <source src="cenematic.mp4" type="video/mp4">
+            </video>
+            <p>Cinematic Edit</p>
+        </div>
+
+        <!-- eCommerce Ads -->
+        <div class="video-card ecom fade-in">
+            <video controls>
+                <source src="ecommerce-ads.mp4" type="video/mp4">
+            </video>
+            <p>eCommerce Ad</p>
+        </div>
+
+        <!-- Documentary -->
+        <div class="video-card documentary fade-in">
+            <video controls>
+                <source src="documentry.mp4" type="video/mp4">
+            </video>
+            <p>Documentary Style Edit</p>
+        </div>
+
+        <!-- Color Grading -->
+        <div class="video-card color fade-in">
+            <video controls>
+                <source src="colour-grading.mp4" type="video/mp4">
+            </video>
+            <p>Color Grading</p>
+        </div>
+
+        <!-- Anime -->
+        <div class="video-card anime fade-in">
+            <video controls>
+                <source src="anime.mp4" type="video/mp4">
+            </video>
+            <p>Anime Edit</p>
+        </div>
+
+        <!-- Ads -->
+        <div class="video-card ads fade-in">
+            <video controls>
+                <source src="ads.mp4" type="video/mp4">
+            </video>
+            <p>Advertisement Edit</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="fade-in">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">"Amazing editing work!" - Client A</div>
+            <div class="testimonial">"Our social media grew instantly!" - Client B</div>
+            <div class="testimonial">"Highly professional!" - Client C</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- PARTICLE CONTROLS -->
+    <div id="particle-controls">
+        <label for="particleDensity">Density:</label>
+        <input type="range" id="particleDensity" min="50" max="300" value="120">
+        <label for="particleSpeed">Speed:</label>
+        <input type="range" id="particleSpeed" min="0.1" max="3" step="0.1" value="1">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
